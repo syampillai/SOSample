@@ -3,7 +3,7 @@
 This project can be used as a starting point to create your own Vaadin application with SO Component addon.
 It has the necessary dependencies and files to help you get started.
 
-To access it directly from github, clone the repository and import the project to the IDE of your choice as a Maven project. You need to have Java 8 or 11 installed.
+To access it directly from github, clone the repository and import the project to the IDE of your choice as a Maven project. You need to have Java 11 installed.
 
 Run using `mvn jetty:run` and open [http://localhost:8080](http://localhost:8080) in the browser.
 
