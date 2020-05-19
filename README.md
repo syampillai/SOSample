@@ -1,4 +1,4 @@
-# Skeleton Starter for Vaadin with SO Components addon
+# Sample Application for Vaadin with SO Components addon
 
 This project can be used as a starting point to create your own Vaadin application with SO Component addon.
 It has the necessary dependencies and files to help you get started.
