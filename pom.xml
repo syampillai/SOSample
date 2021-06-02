@@ -25,7 +25,7 @@
                 <type>pom</type>
                 <scope>import</scope>
                 <version>${vaadin.version}</version>
-            </dependecy>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
