@@ -15,7 +15,7 @@ public class App extends Application {
 
         @Override
         public void drawMenu(Application application) {
-            setCaption("Sample Application");
+            setCaption("Sample Application  Ver 1.0.4");
             addToNavbar(new SpeakerButton());
             ApplicationMenu menu = getMenu();
             ApplicationMenuItem ami;
