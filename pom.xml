@@ -6,23 +6,30 @@
     <groupId>com.storedobject.sample</groupId>
     <artifactId>sample</artifactId>
     <name>Usage of SO Components - Sample Project</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>war</packaging>
 
     <properties>
-        <vaadin.version>24.6.5</vaadin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java-version>17</java-version>
-        <maven.compiler.release>${java-version}</maven.compiler.release>
-        <maven-compiler-plugin-version>3.12.1</maven-compiler-plugin-version>
+        <java-version>21</java-version>
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
+        <maven-jar-plugin-version>3.4.2</maven-jar-plugin-version>
         <maven-war-plugin-version>3.4.0</maven-war-plugin-version>
         <maven-resources-plugin-version>3.3.1</maven-resources-plugin-version>
-        <maven-javadoc-plugin-version>3.6.3</maven-javadoc-plugin-version>
-        <maven-source-plugin-version>3.3.0</maven-source-plugin-version>
-        <maven-assembly-plugin-version>3.6.0</maven-assembly-plugin-version>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-        <jetty.version>12.0.16</jetty.version>
+        <maven-javadoc-plugin-version>3.11.2</maven-javadoc-plugin-version>
+        <maven-source-plugin-version>3.3.1</maven-source-plugin-version>
+        <maven-assembly-plugin-version>3.7.1</maven-assembly-plugin-version>
+        <maven-shade-plugin-version>3.6.0</maven-shade-plugin-version>
+        <maven-dependency-plugin-version>3.8.1</maven-dependency-plugin-version>
+        <jackson-version>2.18.2</jackson-version>
+        <batik-version>1.18</batik-version>
+        <commons-text-version>1.13.0</commons-text-version>
+        <commons-io-version>2.18.0</commons-io-version>
+        <commons-lang3-version>3.17.0</commons-lang3-version>
+        <vaadin.version>24.7.1</vaadin.version>
+        <jetty.version>12.0.17</jetty.version>
     </properties>
 
     <repositories>
@@ -120,7 +127,7 @@
         <dependency>
             <groupId>com.storedobject.vaadin</groupId>
             <artifactId>so-components</artifactId>
-            <version>12.0.0</version>
+            <version>13.0.0</version>
         </dependency>
     </dependencies>
 
@@ -132,12 +139,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>${maven-compiler-plugin-version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>${maven-war-plugin-version}</version>
             </plugin>
             <!-- Jetty plugin for easy testing without a server -->
             <plugin>

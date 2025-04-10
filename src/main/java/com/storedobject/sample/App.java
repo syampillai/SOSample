@@ -23,7 +23,13 @@ public class App extends Application {
             menu.add(ami);
             ami = application.createMenuItem("Two", () -> Notification.show("Hello World 2!"));
             menu.add(ami);
-            ami = application.createMenuItem("Greeting", () -> Application.get().speak("Hello, how are you?"));
+            ami = application.createMenuItem("Greeting", () -> {
+                Application a = Application.get();
+                a.speak("Hello, how are you?");
+                if(!a.isSpeakerOn()) {
+                    Notification.show("Speaker is off! Click on the speaker button to turn it on.");
+                }
+            });
             menu.add(ami);
         }
     }
