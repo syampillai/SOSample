@@ -32,6 +32,11 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="so-maven" />
+      <option name="name" value="so-maven" />
+      <option name="url" value="https://com.storedobject.maven" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="Vaadin Directory" />
       <option name="name" value="Vaadin Directory" />
       <option name="url" value="https://maven.vaadin.com/vaadin-addons" />
@@ -45,6 +50,11 @@
       <option name="id" value="Vaadin pre-release repository" />
       <option name="name" value="Vaadin pre-release repository" />
       <option name="url" value="http://maven.vaadin.com/vaadin-prereleases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="so-maven" />
+      <option name="name" value="so-maven" />
+      <option name="url" value="com.storedobject.maven" />
     </remote-repository>
   </component>
 </project>
