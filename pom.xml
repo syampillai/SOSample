@@ -10,10 +10,9 @@
         <version>24.7.2</version>
     </parent>
 
-    <groupId>com.storedobject.sample</groupId>
-    <artifactId>sample</artifactId>
+    <artifactId>so-sample</artifactId>
     <name>Usage of SO Components - Sample Project</name>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>war</packaging>
 
     <repositories>
